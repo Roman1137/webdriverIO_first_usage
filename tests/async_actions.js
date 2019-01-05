@@ -8,7 +8,7 @@ describe("async actions", () => {
         browser.url("https://www.seleniumhq.org/");
     });
     it('should work', () => {
-        debugger;
+        //debugger;
         const title = browser.getTitle();
         let mainContentElement = $("#mainContent + h2");
         mainContentElement.waitForDisplayed(5000);
