@@ -59,5 +59,6 @@
   },
   "exclude": [
     "node_modules"
-  ]
+  ],
+  "compileOnSave": true
 }
