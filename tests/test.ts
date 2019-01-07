@@ -1,4 +1,7 @@
 /// <reference path="../node_modules/webdriverio/webdriverio.d.ts" />
+let chaiHttp = require("chai-http");
+let chai = require("chai");
+chai.use(chaiHttp);
 
 import {expect} from 'chai';
 
@@ -7,7 +10,7 @@ describe("sdsdsd", ()=> {
         browser.url("http://google.com");
     });
 
-    it('should ', () => {
+    it('should ', async () => {
         //debugger;
         const title : string = browser.getTitle();
         expect(title).to.contain("Google");
@@ -19,5 +22,8 @@ describe("sdsdsd", ()=> {
         browser.pause(1000);
         $("[name=btnK]").click();
         browser.pause(1000);
+
+        let response = await chai.request('http://google.com').get('/');
+        console.log(response.text);
     });
 });

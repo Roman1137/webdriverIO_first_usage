@@ -14,6 +14,7 @@ describe("async actions", () => {
         //debugger;
         const title : string = browser.getTitle();
         let mainContentElement = $("#mainContent + h2");
+        
         mainContentElement.waitForDisplayed(5000);
 
         let projectsElement = $("#menu_projects");

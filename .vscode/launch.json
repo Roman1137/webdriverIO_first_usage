@@ -16,7 +16,8 @@
             "env": {
                 "DEBUG": "1"
             },
-            "console": "internalConsole",
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen",
             "outputCapture": "std",
             "address": "localhost",
             "timeout": 999999,

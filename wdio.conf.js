@@ -3,7 +3,7 @@ exports.config = {
     debug: true,
     execArgv: ['--inspect=127.0.0.1:5859'], 
     specs: [
-        './tests/async_actions.js'
+        './tests/olx_scenario.js'
     ],
     // Patterns to exclude.
     exclude: [
